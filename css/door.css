@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  background-color: #001ED6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: opacity 1.5s ease;
+}
+
+.logo {
+  width: 128px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.fade-out {
+  opacity: 0;
+}

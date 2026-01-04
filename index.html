@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vibware - start</title>
+  <link rel="stylesheet" href="css/door.css">
+</head>
+<body>
+  <div class="door">
+    <img src="assets/images/access_logo.png" class="logo">
+    <audio id="welcome-sound" src="https://jumpshare.com/share/x2GnQfAhBIuFxOl0uUVA" preload="auto"></audio>
+  </div>
+
+  <script>
+    const logo = document.querySelector(".logo");
+    const audio = document.getElementById("welcome-sound");
+
+    logo.addEventListener("click", () => {
+      // Play the audio
+      audio.play();
+
+      // Add fade-out effect
+      document.body.classList.add("fade-out");
+
+      // Wait for the fade before redirect
+      setTimeout(() => {
+        window.location.href = "home.html";
+      }, 1500); // 1.5s matches the fade duration
+    });
+  </script>
+</body>
+</html>

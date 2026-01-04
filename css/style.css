@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'windows';
+  src: url('../assets/fonts/windows-bold.ttf') format('truetype');
+}
+
+/* Reset & Body */
+html, body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #001ed6;
+  color: #F281F4;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'windows', monospace;
+}
+
+/* Terminal Layout */
+.terminal-wrapper {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminal {
+  background-color: #001ed6;
+  color: #F281F4;
+  border-radius: 1px;
+  overflow-x: hidden;
+  text-align: left;
+  width: 80%;
+  height: 100%;
+  font-family: inherit;
+  display: block;
+}
+
+.terminal pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding-left: 1ch;
+  margin: 0;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-link {
+  display: inline-block;
+  line-height: 0;
+}
+
+.logo-link img {
+  width: 86px;
+  height: auto;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.logo-link:hover img {
+  opacity: 0.8;
+}
+
+/* Navigation */
+.nav-strip {
+  position: relative;
+  width: 100%;
+  background-color: #001ed6;
+  color: #F281F4;
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'windows', monospace;
+  box-sizing: border-box;
+}
+
+/* Links */
+a:link { color: #F281F4; }
+a:visited { color: #F281F4; }
+a:hover { color: #C070C0; }
+a:active { color: #F2CFF2; }
+
+/* Font consistency */
+pre, code {
+  font-family: inherit;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .terminal-wrapper {
+    width: 100%;
+    max-width: 600px;
+    height: auto; /* don’t force full height */
+    padding: 0 1rem;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .terminal {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .logo img {
+    width: 72px;
+    height: auto;
+    display: block;
+    border: none; /* ensures no thin line appears */
+  }
+
+  .nav-strip {
+    width: 100%;
+    padding: 0.75rem 0;
+    background-color: #001ed6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  #terminal-text {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+
+/* Fade */
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fade.show {
+  opacity: 1;
+}
