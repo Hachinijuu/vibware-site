@@ -8,30 +8,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 thank you for visiting my site.
   
-all i know to do in this world is to express.
-  
-vibware is a way of clustering my experiences and emotions into other experiences i can share with you.
+vibware is my cluster of emotions as
 
-a way to compile all of the fond memories influenced by the rapidly decaying vanguards motivated by profits.
-  
-seeing the pace at which humankind accelerates,
-it causes me vertigo.
-  
-but i wish to take with me some of the lessons.
+someone whose life has been defined by tech and digital prescence.
 
-to wherever humanity decides to go.
-  
-as magic,
-as tales,
-closing the cycle finally.
-  
-like how one is
-and another later re-discovers.
+
+experiences.
+
+made sound.
+
+made light.
 `;
 
   el.innerHTML = ""; // clear contents
   let i = 0;
-  const speed = 35;
+  const speed = 45;
 
   function typeWriter() {
     let currentChar = text.charAt(i);

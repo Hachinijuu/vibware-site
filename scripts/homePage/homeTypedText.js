@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   const text = `hi.
 welcome to the vibware terminal.
-the purpose of this console is to stream sound and light.
 
 this site is currently under construction.
 
@@ -15,7 +14,7 @@ check out the music tab in the meantime. :)
 
   el.innerHTML = ""; // clear contents
   let i = 0;
-  const speed = 35;
+  const speed = 45;
 
   function typeWriter() {
     let currentChar = text.charAt(i);
