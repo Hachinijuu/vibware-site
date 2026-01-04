@@ -8,16 +8,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 thank you for visiting my site.
   
-vibware is my cluster of emotions as
-
-someone whose life has been defined by tech and digital prescence.
-
+vibware is my cluster of emotions as someone whose life has been defined by tech and digital prescence.
 
 experiences.
 
 made sound.
-
 made light.
+
+this is my prime method of communication.
+i hope it resonates.
+
+if not,
+
+turn up the volume :)
 `;
 
   el.innerHTML = ""; // clear contents
