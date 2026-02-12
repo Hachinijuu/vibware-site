@@ -142,3 +142,20 @@ body::-webkit-scrollbar {
   opacity: 1;
   pointer-events: auto;
 }
+
+/* ===== MOBILE LAYOUT ===== */
+@media (max-width: 680px) {
+  .audio-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .album-card {
+    width: 70vw;       /* responsive, still bold */
+    max-width: 260px;  /* prevents giant covers */
+  }
+
+  .album-title {
+    text-align: left;
+  }
+}
