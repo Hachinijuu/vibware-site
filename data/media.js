@@ -85,6 +85,18 @@ export const media = [
     date: "202602",
     platform: "vibware.com",
     commentary: "Take it easy, turn the page. It's just another summer day."
+    
+},
+
+{
+    id: "SUMMERING_visualizer.gif",
+    type: "visual",
+    description: "Cover Art",
+    src: "/assets/images/summering/SUMMERING_visualizer.gif",
+    date: "202602",
+    platform: "vibware.com",
+    commentary: "Take it easy, turn the page. It's just another summer day."
+    
 }
 
 ]
