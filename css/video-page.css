@@ -6,24 +6,6 @@ html, body {
   overflow-y: hidden;
 }
 
-.nav-strip {
-  /* Remove fixed width + auto margin that forces bad centering */
-  width: 100%;
-  max-width: none;               /* let it breathe */
-  margin: 0;                     /* no extra side margins */
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;        /* subtle breathing room if needed */
-  background-color: #001ed6;
-  color: #F281F4;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  font-family: 'windows', monospace;
-  box-sizing: border-box;
-  position: relative;            /* revert from static → matches base behavior */
-}
-
 /* Remove or comment out this block entirely — it's causing most of the trouble */
 .video-scroll {
   max-height: calc(100vh - 180px);
