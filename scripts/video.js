@@ -1,4 +1,4 @@
-import { media } from "/data/media.js";
+import { media } from "...media.js";
 
 const collage = document.getElementById("videoCollage");
 
