@@ -1,6 +1,3 @@
-.terminal-wrapper {
-  max-width: 100%;
-}
 
 html, body {
   overflow-y: hidden;
@@ -15,13 +12,6 @@ html, body {
 /* If you still want no scrollbar visible */
 .video-scroll::-webkit-scrollbar {
   width: 0;
-}
-
-/* Make sure .terminal is consistent with audio page */
-.terminal {
-  width: 80%;                    /* matches style.css base */
-  max-width: 600px;              /* or remove if you want it to scale wider */
-  margin: 0 auto;                /* center it if needed */
 }
 
 /* Fix console-frame interaction — prevent oversized header push */
