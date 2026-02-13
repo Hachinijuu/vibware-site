@@ -1,0 +1,8 @@
+.about-page {
+  background-color: #001ED6;
+  background-image: url('../assets/images/skyBG.png');
+  background-repeat: repeat;
+  background-size: 50% 100vh;
+  background-attachment: fixed;
+  background-position: top left;
+}
