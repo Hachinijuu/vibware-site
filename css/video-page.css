@@ -6,36 +6,50 @@ html, body {
   overflow-y: hidden;
 }
 
-.terminal {
-  width: 90%;
-}
-
-.video-scroll {
-  max-height: calc(100vh - 180px); /* same math as audio */
-  overflow-y: scroll;
-}
-
-.video-scroll::-webkit-scrollbar {
-  width: 0;
-}
-
 .nav-strip {
-  position: static;
-  width: 600px;
+  /* Remove fixed width + auto margin that forces bad centering */
+  width: 100%;
+  max-width: none;               /* let it breathe */
+  margin: 0;                     /* no extra side margins */
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;        /* subtle breathing room if needed */
   background-color: #001ed6;
   color: #F281F4;
-  padding-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   font-family: 'windows', monospace;
   box-sizing: border-box;
-  margin: 0 auto;
+  position: relative;            /* revert from static → matches base behavior */
+}
+
+/* Remove or comment out this block entirely — it's causing most of the trouble */
+.video-scroll {
+  max-height: calc(100vh - 180px);
+  overflow-y: scroll;
+}
+
+/* If you still want no scrollbar visible */
+.video-scroll::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Make sure .terminal is consistent with audio page */
+.terminal {
+  width: 80%;                    /* matches style.css base */
+  max-width: 600px;              /* or remove if you want it to scale wider */
+  margin: 0 auto;                /* center it if needed */
+}
+
+/* Fix console-frame interaction — prevent oversized header push */
+.console-frame {
+  margin-top: 0;                 /* tighter to nav if desired */
+  margin-bottom: 1rem;
 }
 
 .console-header {
-  width: 100%;
+  height: calc(1.6em + 4px);     /* keep your original, but ensure it's not oversized */
 }
 
 .video-collage {
@@ -58,8 +72,19 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  .video-collage {
-    column-count: 2;
+  .nav-strip {
+    padding: 0.75rem 0;          /* matches your audio mobile rule */
+    justify-content: space-evenly; /* tighter on small screens */
+    flex-wrap: wrap;
+  }
+
+  .terminal {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .video-scroll {
+    max-height: calc(100vh - 140px); /* adjust number if header/nav feels too tall */
   }
 }
 
