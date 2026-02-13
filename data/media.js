@@ -18,7 +18,7 @@ export const media = [
     id: "sprites_cover.png",
     type: "visual",
     description: "Cover Art",
-    src: "../assets/media/_sprites/sprites_cover.png",
+    src: ".../assets/media/_sprites/sprites_cover.png",
     date: "202510",
     platform: "All DSPs",
     commentary: "...The entire animation is technically still there..."
