@@ -53,14 +53,15 @@ html, body {
     align-items: center;
     box-sizing: border-box;
   }
-  .terminal {
-    width: 100%;
-    padding: 0 1rem;
-  }
+
 
   .video-scroll {
     max-height: calc(100vh - 140px); /* adjust number if header/nav feels too tall */
   }
+
+  .console-frame {
+    margin: 0rem;
+    }
 }
 
 html,
