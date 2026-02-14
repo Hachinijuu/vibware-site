@@ -16,8 +16,8 @@ html, body {
 
 /* Fix console-frame interaction — prevent oversized header push */
 .console-frame {
-  margin-top: 0;                 /* tighter to nav if desired */
-  margin-bottom: 1rem;
+  margin-top: 1rem;                 /* tighter to nav if desired */
+  margin-bottom: 0;
 }
 
 .console-header {
@@ -45,11 +45,14 @@ html, body {
 
 @media (max-width: 768px) {
   .nav-strip {
-    padding: 0.75rem 0;          /* matches your audio mobile rule */
-    justify-content: space-evenly; /* tighter on small screens */
-    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.75rem 0;
+    background-color: #001ed6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
   }
-
   .terminal {
     width: 100%;
     padding: 0 1rem;
