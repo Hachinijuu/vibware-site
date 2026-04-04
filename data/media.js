@@ -97,6 +97,40 @@ export const media = [
     platform: "vibware.com",
     commentary: "Take it easy, turn the page. It's just another summer day."
     
+},
+
+//CATHEDRAL
+
+{
+    id: "CATHEDRAL_cover.png",
+    type: "visual",
+    description: "Cover Art",
+    src: "/assets/images/cathedral/CATHEDRAL_cover.png",
+    date: "202604",
+    platform: "All DSPs",
+    commentary: "Love."
+},
+
+{
+    id: "CATHEDRAL_visualizer.gif",
+    type: "visual",
+    description: "Cover Art",
+    src: "/assets/images/cathedral/CATHEDRAL_visualizer.gif",
+    date: "202604",
+    platform: "vibware.com",
+    commentary: "Hear the beat, walk the walk."
+    
+},
+
+{
+    id: "CATHEDRAL_cover_anim.gif",
+    type: "visual",
+    description: "Cover Art",
+    src: "/assets/images/cathedral/CATHEDRAL_cover_anim.gif",
+    date: "202604",
+    platform: "vibware.com",
+    commentary: "Did I ever tell you how much I admire you?"
+    
 }
 
 ]
